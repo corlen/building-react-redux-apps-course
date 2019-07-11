@@ -34,7 +34,7 @@ export function loadCourses() {
 }
 
 export function saveCourses(course) {
-  return function(dispatch, getState) {
+  return function(dispatch) {
     dispatch(beginApiCall());
     return courseApi
       .saveCourse(course)
